@@ -1,4 +1,4 @@
-// Challenge 2 : Conversion de la distance :
+// Challenge 3 : Conversion de la distance :
 
 var prompt = require('prompt-sync')();
 
