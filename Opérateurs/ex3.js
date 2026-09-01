@@ -2,8 +2,8 @@
 
 var prompt = require('prompt-sync')();
 
-let A = prompt("nombre A :");
-let B = prompt("nombre B : (B>0)");
+let A = prompt("nombre A : ");
+let B = prompt("nombre B (B>0) : ");
 
 A += B ;
 console.log({A});
