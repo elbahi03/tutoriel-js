@@ -3,14 +3,10 @@
 var prompt = require('prompt-sync')();
 
 let A = Number(prompt("nombre A :"));
-let B = Number(prompt("nombre B :"));
-
-if ( A == B ) {
-    console.log("egal");   
-}else {
-    if ( A  >B ){
-        console.log("a big");
-    }else {
-        console.log("b big");     
-    }
+let i = 1 ;
+let j = 1 ;
+while ( j <= A){
+    console.log(i);
+    i += 2 ;
+    j ++ ;
 }
