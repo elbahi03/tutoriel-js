@@ -11,7 +11,7 @@ if( car.length != 1 ){
     if ( alpha >=65 && alpha <= 90 ){
         console.log("majuscule");     
     } else if ( alpha >= 97 && alpha <= 122 ){
-        console.log("muniscule;")
+        console.log("muniscule")
     }else{
         console.log("is not a alphabet");    
     }
