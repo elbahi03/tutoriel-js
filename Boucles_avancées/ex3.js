@@ -3,9 +3,9 @@
 var prompt = require('prompt-sync')();
 
 let num = Number(prompt("value of num : (n>=2) :"));
-let j = 2;
+
 switch (num) {
-    case 1:
+    case 1, 0:
         console.log("null");
         break;
     case 2:
@@ -15,7 +15,7 @@ switch (num) {
         console.log("2, 3");
         break;
     default:
-        for (j; j <= num; j++) {
+        for (let j = 2; j <= num; j++) {
             let k = 0;
             for (let i = 2; i < j; i++) {
                 if (j % i == 0) {
