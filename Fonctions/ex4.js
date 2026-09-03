@@ -1,7 +1,5 @@
 // Challenge 4 : Fonction de Minimum
 
-// Challenge 3 : Fonction de Maximum : 
-
 function Min(a, b) {
     let message ;
     if (a > b) {
