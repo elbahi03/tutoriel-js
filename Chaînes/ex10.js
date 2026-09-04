@@ -4,20 +4,22 @@ var prompt = require('prompt-sync')();
 
 let text = prompt("entrer text  : ");
 let sou_text = prompt("entrer sous-text  : ");
-let count = 0 ;
-let j = 0;
-for(let i=0; i<=text.length-1; i++ ){
-    if(text[i] == sou_text[j]){
-        count++ ;
-        j++;   
+
+let mot = "";
+let trouve = false ;
+for(let i = 0 ; i<= text.length-1 ; i++ ){
+    for ( let j = i ; j<= text.length-1 ; j++ ){
+        mot += text[j];
     }
-    if (count == sou_text.length){
-        console.log("trouve")
+    if( mot == sou_text){
+        trouve = true ;
         break ;
     }
-    
+    mot = "";
 }
 
-if ( count != sou_text.length ){
+if (trouve == true){
+    console.log("trouve")
+}else {
     console.log("non trouve")
 }
