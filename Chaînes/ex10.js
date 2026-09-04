@@ -7,8 +7,7 @@ let sou_text = prompt("entrer sous-text  : ");
 let count = 0 ;
 let j = 0;
 for(let i=0; i<=text.length-1; i++ ){
-    console.log(i, j)
-    while (text[i] == sou_text[j]){
+    if(text[i] == sou_text[j]){
         count++ ;
         j++;   
     }
