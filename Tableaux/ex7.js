@@ -1,4 +1,4 @@
-// Challenge 12 : Tri par Bulles
+// Challenge 7 : Tableau en Ordre Croissant
 
 var prompt = require('prompt-sync')();
 
