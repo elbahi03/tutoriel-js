@@ -10,7 +10,7 @@ for (let i = 0; i < num; i++) {
 }
 
 for (let i = 0; i < num; i++) {
-    if ( tableau[i] % 2 == 0 ){
+    if (tableau[i] % 2 == 0) {
         console.log(tableau[i])
     }
 }
