@@ -1,0 +1,8 @@
+// concept de map :
+// ki khalik tmodifier ou t3adal 3la tableau (array), bi tari9a nadiya .
+
+// const strings = ["1", "2", "3"];
+// const numbers = strings.map(str => parseInt(str));
+// console.log(numbers);  // Outputs: [1, 2, 3]
+
+//
