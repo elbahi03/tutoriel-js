@@ -10,6 +10,7 @@ let num = Number(prompt("nombre de entier : "));
 for (let i = 0; i < num; i++) {
     nums[i] = Number(prompt("N(" + i + ") = "));
 }
+
 let min = nums[0];
 
 for (let i = 0; i < num; i++) {
