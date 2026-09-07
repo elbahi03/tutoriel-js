@@ -5,4 +5,69 @@
 // const numbers = strings.map(str => parseInt(str));
 // console.log(numbers);  // Outputs: [1, 2, 3]
 
-//
+// OBJETS :
+
+// add : 
+// const user = {
+//   name: "Alex"
+// };
+
+// user.age = 30;
+// user.name = "Jordan";
+
+// console.log(user);
+
+// update :
+
+// sahla ha jbad valeur ou ktab fih dakxi li biti 
+
+// delete : 
+// delete user.age;
+
+// vide valeur : 
+
+// user.age = null; 
+
+// METHODE IN JS :
+
+// * copier & add : 
+// const copy_Person = Object.assign({}, person); (fi person n9dar ndir ktar min object)
+
+// * afficher gir keys :
+// Object.keys();
+
+// * Object.values();
+
+// * Object.entries : kola property katwali array 
+
+// * Methode trouve : 
+// personalbar.hasOwnProperty('name');  true or false
+
+
+// ** blan ta3 copier coller heritag ou dakxi :
+
+// const user = {
+//   name: "Ali",
+//   role: "user"
+// };
+
+// const updated = {
+//   ...user,
+//   role: "admin"
+// };
+
+// affichage : 
+// console.log(user.role);    // "user"
+// console.log(updated.role); // "admin"
+//  user    → { name: "Ali", role: "user" }
+
+// updated → { name: "Ali", role: "admin" }
+
+// maps : 
+
+// const apiResponse = [
+//   { id: 1, title: "Post 1" },
+//   { id: 2, title: "Post 2" },
+// ];
+// const titles = apiResponse.map(post => post.title);
+// console.log(titles);  // Outputs: ["Post 1", "Post 2"]

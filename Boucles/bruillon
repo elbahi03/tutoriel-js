@@ -1,0 +1,30 @@
+** for :
+normal boucle li kan 3arfouh .
+
+hado ki tsta3mlo soi fi array soi fi objet
+
+** for of :
+ki afficher just values
+
+** for in :
+hada ki afficher lkeys
+
+** forEach : 
+
+const users = [ "ali", maryam , hada ]
+users.forEach((user=>{
+    console.log('welcom, ${user})
+}))
+
+const scores = [98, 95, 41]
+scores.forEach(score, index)=> {
+    console.log(score ${index} : ${score})
+}
+
+** map() : 
+
+const numbers = [1, 2, 3, 4, 5];
+const result = numbers.map(x => x * 2)
+
+** filtre() :
+bayna min smiya 
