@@ -8,7 +8,7 @@ let sou_text = prompt("entrer sous-text  : ");
 let mot = "";
 let trouve = false ;
 for(let i = 0 ; i<= text.length-1 ; i++ ){
-    for ( let j = i ; j<= text.length-1 ; j++ ){
+    for ( let j = i ; j<= sou_text.length-1 ; j++ ){
         mot += text[j];
     }
     if( mot == sou_text){
