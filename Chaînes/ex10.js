@@ -4,14 +4,14 @@ var prompt = require('prompt-sync')();
 
 let text = prompt("entrer text  : ");
 let sou_text = prompt("entrer sous-text  : ");
-
-let mot = "";
+let mot ;
 let trouve = false ;
-for(let i = 0 ; i<= text.length-1 ; i++ ){
-    for ( let j = i ; j<= sou_text.length-1 ; j++ ){
-        mot += text[j];
+for(let i = 0 ; i<= text.length ; i++ ){
+    mot = "";
+    for ( let j = 0 ; j<= sou_text.length-1 ; j++ ){
+        mot += text[i+j];
     }
-    if( mot == sou_text){
+    if( mot === sou_text){
         trouve = true ;
         break ;
     }
