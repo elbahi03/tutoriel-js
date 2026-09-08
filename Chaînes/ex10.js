@@ -15,7 +15,6 @@ for(let i = 0 ; i<= text.length ; i++ ){
         trouve = true ;
         break ;
     }
-    mot = "";
 }
 
 if (trouve == true){

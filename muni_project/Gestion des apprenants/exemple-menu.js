@@ -1,4 +1,5 @@
 var prompt = require('prompt-sync')();
+
 // functions : 
 
 // function of choix :
@@ -54,7 +55,6 @@ function recherche(text, sou_text) {
         }
         mot = "";
     }
-
     return trouve;
 }
 
@@ -115,6 +115,8 @@ function Skills(skill){
         }
     }
 }
+
+
 // array of objet : apprenants
 let apprenants = [
     {
@@ -239,7 +241,7 @@ while (Quitter === false) {
             console.log("le moins :")
             min_note();
             break;
-        case 8 :
+        case 8:
             console.log("apprenant avec skill votre choix : ")
             let skill = prompt("Skill IT qui veux rechercher : ")
             Skills(skill)
