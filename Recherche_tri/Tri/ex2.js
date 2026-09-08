@@ -16,7 +16,7 @@ for (let i = 1; i < num; i++) {
     let cle = nombres[i];
     let j = i - 1;
 
-    while (j >= 0 && nombres[j] > cle) {
+    while (j >= 0 && nombres[j] > cle){
         nombres[j + 1] = nombres[j];
         j--;
     }
