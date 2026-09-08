@@ -1,4 +1,24 @@
 var prompt = require('prompt-sync')();
+// functions : 
+
+// function de recherche :
+function recherche(text, sou_text) {
+    let mot;
+    let trouve = false;
+    for (let i = 0; i <= text.length; i++) {
+        mot = "";
+        for (let j = 0; j <= sou_text.length - 1; j++) {
+            mot += text[i + j];
+        }
+        if (mot === sou_text) {
+            trouve = true;
+            break;
+        }
+        mot = "";
+    }
+
+    return trouve;
+}
 
 let apprenants = [
     {
@@ -48,25 +68,14 @@ switch (choix) {
         let Rechercher = prompt("entrer prenom qui veux : ");
         for (i = 0; i < apprenants.length; i++) {
             let text = apprenants[i].Prenom;
-            let mot = "";
-            let trouve = false;
-            for (let j = 0; j <= text.length - 1; j++) {
-                for (let k = j; k <= Rechercher.length - 1; k++) {
-                    mot += text[k];
-                }
-                console.log(mot)
-                if (mot == Rechercher) {
-                    trouve = true;
-                    break;
-                }
-                mot = "";
-            }
+            let trouve = recherche(text, Rechercher)
             if (trouve == true) {
                 console.log(`apprenant ${i} :
-        * Prenom : ${apprenants[i].Prenom} .
-        * Note : ${apprenants[i].Note}
-                `)
+    * Prenom : ${apprenants[i].Prenom} .
+    * Note : ${apprenants[i].Note}
+            `)
             }
         }
         break;
+
 }
