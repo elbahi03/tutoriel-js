@@ -11,12 +11,12 @@ for (let i = 0; i < num; i++) {
 
 console.log({nums})
 
-for( let i= 0 ; i < num ; i++ ){
-    for ( j=0 ; j<num-i ; j++){
+for( let i= 0 ; i < num -1 ; i++ ){
+    for ( j=0 ; j<num-i -1 ; j++){
         if ( nums[j] > nums[j+1]){
             let a = nums[j] ;
             nums[j] = nums[j+1];
-            nums[j+1] = a
+            nums[j+1] = a;
         }
     }
 } 
